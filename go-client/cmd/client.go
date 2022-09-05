@@ -19,15 +19,11 @@ package main
 
 import (
 	"context"
-	"os"
-)
-
-import (
 	"dubbo.apache.org/dubbo-go/v3/common/logger"
 	"dubbo.apache.org/dubbo-go/v3/config"
 	_ "dubbo.apache.org/dubbo-go/v3/imports"
-
-	"helloworld/api"
+	api "helloworld/api/go/sample"
+	"os"
 )
 
 var grpcGreeterImpl = new(api.GreeterClientImpl)
